@@ -1,0 +1,15 @@
+answers.txt
+
+
+1. If we did the search manually, each search would include the search itself, opening the links and gathering the information.
+Suppose each operation was performed for 5 seconds. We will accept that the duration will be 3*5*60 = 900 [sec] Vs ~ 15 [sec] by script.
+
+
+2. We see that the program significantly streamlines the required time of the task (and will probably also be free of human error).
+It can be used for any non-trivial search, such as searching multiple files in a folder or even adding information within a particular file (for exsample: add a new library to a lot of C files).
+
+
+3. We had to multiply the result of the search time by the number of tests.
+This can be done automatically by the watch command when the time interval is 3600 and every time interval the search process is performed. [watch -n 3600]
+To do the search efficiently with articles that have already been read, we will save a file with the list of links to articles (to which links of new articles will be added each time), and after exporting the arrangement of the new search we will compare its list of links to the permanent list. New to the permanent list of links).
+Notice that the links are alredy sorted, so the search will be efficiant.
